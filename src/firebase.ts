@@ -10,9 +10,9 @@ const firebaseConfig = {
   databaseURL: import.meta.env.VITE_DB_URL,
   projectId: import.meta.env.VITE_PROJECT_ID,
   storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
-  messagingSenderId: "440504308808",
+  messagingSenderId: import.meta.env.VITE_SID,
   appId: import.meta.env.VITE_APP_ID,
-  measurementId: "G-G6DW8GF85S"
+  measurementId: import.meta.env.VITE_TID
 };
 
 // Initialize Firebase

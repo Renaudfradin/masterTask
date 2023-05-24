@@ -1,12 +1,10 @@
 import { SectionWrapper } from "../../templates/SectionWrapper";
 import { TitleGradient } from "../../atoms/TitleGradient";
 import { FeaturesCard } from "../Features/FeaturesCard";
-// import { useTranslation } from "next-i18next";
 import { items } from "./data";
 import * as S from "./styles";
 
 export const Features = () => {
-  // const { t } = useTranslation("common");
 
   return (
     <SectionWrapper>

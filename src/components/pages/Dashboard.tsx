@@ -16,9 +16,7 @@ export const Dashboard = () => {
     <DashboardWrapper>
       <DashboardHeader />
       <Container>
-        <Aside data={users} projects={board} loading={loadingUser} />
-
-        {/* <Board>{data?.board?.length === 0 && <EmptyBoard data={data} />}</Board> */}
+        <Aside data={user} projects={board} loading={loadingUser} />
       </Container>
     </DashboardWrapper>
   );

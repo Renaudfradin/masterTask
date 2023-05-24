@@ -10,7 +10,6 @@ import { useAuth } from "../../../context/AuthContext";
 import { ConfirmButton } from "../../atoms/ConfirmButton";
 import { DeleteButton } from "../../atoms/DeleteButton";
 import { EditButton } from "../../atoms/EditButton";
-import OutsideClickHandler from "react-outside-click-handler";
 
 interface AsideProps {
   data: any;
@@ -83,7 +82,8 @@ export const Aside = ({ data, projects, loading }: AsideProps) => {
         <Button theme="primary" text="Add Board" onClick={setOpenIn} />
         <AddBoardModal open={openIn} setOpen={setOpenIn} />
       </Wrapper>
-      {loading ? <p>Loading...</p> : <p>User: {data?.email}</p>}
+      {loading ? <p>Loading...</p> : <p>User: { console.log(data)
+      }{data?.email}</p>}
     </Container>
   );
 };

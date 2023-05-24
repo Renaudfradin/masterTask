@@ -5,7 +5,6 @@ import { useAuth } from "../../../context/AuthContext";
 import * as S from "./styles";
 
 export const DashboardHeader = () => {
-  // const { t } = useTranslation("common");
   const { user, logOut } = useAuth();
   const navigate = useNavigate();
 
@@ -24,10 +23,8 @@ export const DashboardHeader = () => {
         <div className="left-side">
           <Logo />
         </div>
-
         <S.BtnWrapper>
           <Button
-            // text={t("app_logout_button")}
             text="Déconnexion"
             theme="primary"
             onClick={(e) => {
